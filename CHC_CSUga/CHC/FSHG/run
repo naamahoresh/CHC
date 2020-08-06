@@ -1,0 +1,5 @@
+#!/bin/tcsh
+rm -f running_on_*
+touch -f running_on_`hostname`
+setenv MALLOC_CHECK_ 0
+/usr/bin/time nice ../XCHC -c f100.config >& $argv[1] 

@@ -1,0 +1,6 @@
+#!/bin/bash
+rm -f running_on_*
+echo $argv[1]
+touch -f running_on_`hostname`
+export MALLOC_CHECK_=0
+/usr/bin/time nice ../XCHC -c f1.config >& $argv[1] 

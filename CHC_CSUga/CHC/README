@@ -1,0 +1,313 @@
+There is a whole lot of other stuff in this package which pertains to
+the Total Genitor Algorithms package, mostly in the example directories
+(Evals and F1) and the documentation below, however this is a fairly 
+complete standalone version of CHC for binary encodings.
+
+In order to build your version of CHC you must:
+
+  1. go to the Ga directory and change the GaRoot directory path
+     in the Makefile to reflect the place you have deposited 
+     this directory structure.
+
+  2. build the ga library by doing a make clean.
+
+  3. change the GaRoot and Lcl directory paths in the Makefile of
+     this subdirectory to reflect the place you have deposited this
+     directory structure.
+
+   4. doing a make here will build a version of CHC which uses HUX and
+      operates on binary strings for the evaluation functions found in
+      the ./Evals/m_evals.c file.
+
+      The following documentation explains things about the output
+      and input file formats that you would need only if you are using
+      the functions in the test suite.
+
+      You can run the examples by going to the F1 subdirectory and 
+      typing:
+      run "myfile". 
+      This executes the run script found there.  
+      Results will be placed in "myfile."
+      There is also a gray coded example.
+
+============================================================================
+                                DISCLAIMER
+============================================================================
+     You will find certain coding inefficiencies in this implementation
+     of the CHC code.  While there are certainly some better ways to do
+     this - this implementation was written to interface with the Genitor
+     Algorithm package as well as making certain bookkeeping information 
+     more readily obtainable.
+
+
+============================================================================
+                                SECTION 1
+============================================================================
+The ./TSuiteSamples directory contains examples of various test suite
+problems.
+
+All of the example models used here perform search on the TestSuite
+problems found in the $(HOME)/AppEvals/TestSuite/ directory.  These
+problems are driven using a .params file whose prefix is specified using
+the NodeFile option in the .config file.  The .params file is used
+to specify the function to be evaluated, the encoding to be used, the
+complexity/composition/noise options, number of parameters and the format
+for each parameter.  These options are discussed below on a line by 
+line basis.  All alpha options work in lower or upper case and are
+typically shown in the .params file as a full word for better description
+of what the option is used for.
+
+   Line 1:
+	(f#) Single function evaluation to be used specified by #.
+
+	(c # # [adms]) The `c' indicates that the function evaluation
+		       will be a composition of functions.  The first `#' 
+		       indicates the outter function in the composition
+		       and the second indicates the inner function of the
+		       composition (i.e., c 8 2; would indicate a function
+		       composition of f8(f2)).  
+		       
+		       Many of the evaluation functions have the capability 
+		       to take in multiple parameters.  Therefore the exact
+		       composition is subject to some ambiguity.  Thus, the
+		       [adms] options are available to specify the type of 
+		       function composition desired.  
+
+		       [s] Simple.  f8(f2)
+		       [a] Addative f8(f2() + f2() + f2())
+		       [d] Distibuted f8(f2(), f2(), f2())
+		       [m] Multiplicative f8(f2()) + f8(f2()) + f8(f2())
+
+		       Obviously, the number of parameters the functions 
+		       require must be valid for the options to be executed 
+		       correctly.
+	
+	(d 98 #) Dual function evaluation.  This is a specialized transformation
+	        of a primitive function which will make the problem similar in
+	        BCD and Gray coded representations of the search space.  There
+	        are many conditions that need to be set up for use of this
+	        function. This evaluation requires a primitive function 
+                (e.g. f1 or f2) to transform which is specified by the '#'
+		value.  The dual function is comprised of several independent
+		terms added together, where each term is an evaluation of 
+		the primitive function in a transformed space.  So, the
+		first step is to determine how many terms are required.  This
+	 	is ceil(log2(#bits per parameter)). Currently, the primitive 
+		functions have been selected to have parameters of equal size.  
+		We then multiply the number of terms by the number of 
+		parameters required by the primitive function.  This will be
+		the total number of parameters required by the dual function.
+		The parameters are defined exactly as they would be for 
+		the primitive function.  For example, F2 takes 2 parameters
+		of 12 bits each, so we have 16 terms and 32 parameters for 
+		the dual problem where each parameter is still 12 bits and
+		in the same range as in F2.
+
+		NOTE: The value on Line 3 should be 's' for 
+		standard evaluation--adding nonlinearities will change the
+		problem and it may no longer be BCD/Gray similar. 
+	
+	(n[abiot]) All of the function specification/composition listed above
+		   may be prefaced with the `n' option which induces noise
+		   in the evaluation process as specified by the next alpha
+		   indicator.  All of these noise options refer to the 
+		   application of gaussian noise with a mean of 0 and a standard
+		   deviation of 1.  Also, all of these noise options are 
+		   sensitive to the structure chosen for the function.  The 
+		   option descriptions are posted below in an order of 
+		   simplicity rather than alphabetically, for better 
+		   understanding.  
+		   
+		   With only a single exception the true fitness value of the 
+		   function without any noise added into the evaluation is 
+		   available by calling the get_tru_fit() function.  The single 
+		   exception is when the Inner or Outter noise options are 
+		   used in conjunction with the Terminal noise option for a
+		   composition of the form: f8(f2()) + f8(f2()) + f8(f2()).  
+		  
+
+		   [o] Outter.  This option applies noise to the outter-most
+		       evaluation term.  Thus, for simple functions like:
+		       F' = f1(), a single noise term is added to the evaluation
+		       value of the function (i.e., F' = F' + gauss()).
+
+		       In the case of a complex function where variables are 
+		       paired up to feed into a function like:
+		       F' = f2(a,b) + f2(b,c) + f2(c,a), the Outter noise option
+		       adds a single noise term to the final value of the 
+		       complex function (i.e., F' = F' + gauss()).
+
+		       In the case of function composition for the 
+		       additive and distributed composition options:
+		       F' = f8(f2() + f2() + f2()) and 
+		       F' = f8(f2(), f2(), f2()), the Outter noise option adds 
+		       a single noise term to the final value of the complex 
+		       function (i.e., F' = F' + gauss()).
+
+		       In the case of multiplicative function composition like:
+		       F' = f8(f2()) + f8(f2()) + f8(f2()), the Outter noise
+		       option adds a noise term the evaluation values for each
+		       of the outter functions in each composition:
+		       (i.e., f8(f2()) + gauss()).  To add a single noise
+		       term to the final evaluation of this type of function
+		       composition (i.e., F' = F' + gauss() ) see the Terminal
+		       noise option.
+
+		   [i] Inner.  This option adds noise to the inner-most terms
+		       of a test function.  An inner-most term can be the 
+		       evaluation value of f2() in a composition such as 
+		       f8(f2()) or each of the evaluation terms in the 
+		       complexity version of the test functions (i.e., f, w, l).
+		       Thus, for each term in f2(a,b) + f2(b,c) + f2(c,a), noise
+		       is added to the evaluation value for each pair (i.e., 
+		       [f2(a,b)+gauss()] + [f2(b,c)+gauss()] + [f2(c,a)+gauss()] 
+		   [b] Both.  This option combines both the Inner and Outter 
+		       noise options.  This option provides noise in both the
+		       inner and outter evaluation terms as described above.
+
+		   [t] Terminal Noise.  The Terminal noise option is used only
+		       for the multiplicative function composition form, where:
+		       F' = f8(f2()) + f8(f2()) + f8(f2()).  This option is
+		       the appropriate method for adding a single noise term
+		       to the final evaluation value of the function (i.e.,
+		       (i.e., F' = F' + gauss() ).  When this option is used
+		       the true fitness evaluation value for the parameters
+		       without noise terms added to the function is not 
+		       available via the call to get_tru_fit().
+
+		   [a] All.  The All noise option is also used only for the 
+		       multiplicative function composition form, where:
+		       F' = f8(f2()) + f8(f2()) + f8(f2()).  This option adds 
+		       a Gaussian noise term to every sub-evaluation value in 
+		       the total evaluation function and as a terminal form as 
+		       well thus, combining the I, O, and T options into a 
+		       single option.  When this option is used the true fitness
+		       evaluation value for the parameters without noise terms 
+		       added to the function is not available via the call to 
+		       get_tru_fit().
+                  
+
+   Line 2:
+	(b) BCD encoding of the problem
+	(g) Gray encoding of the problem
+
+   Line 3:
+	(s) Standard version of the problem - no non-linear complexities
+	(f) Full matrix combinations of parameters for non-linear complexities
+	(l) Lower-left matrix combinations of parameters for complexity
+	    Actually implemented as top right of matrix.
+	(w) Upper minor diagonal and lower left corner combinations of
+	    parameters for complexity.  Originally thought of as the top
+	    row of parameter pairs plus the pair formed by wrapping around,
+	    thus the name wrap.
+
+	NOTE: when using options [f, l or w] the function used must take
+	      in two parameters, if used in conjunction with the `c'
+	      (complexity) option on line 1, the innermost function of
+	      the composition must take in two parameters.
+   
+   Line 4:
+	(#) Number of parameters in the problem.
+
+   Lines 5 through Number of parameters:
+	These lines are used to tell the binary decoder how to 
+	decode parameters on the string and convert them to floating
+	point values for evaluation in the actual function.  There must
+	be one line for each parameter.  An example line might be (actually 
+	taken from F10):
+              p1 22 u     1.0  -100 100 Var_1
+
+	The fields are separated by white space and are as follows:
+              Field 1: (p1) comment field
+	      Field 2: (22) number of bits in parameter
+	      Field 3: (s) indicates first bit used as sign bit
+	               (u) indicates first bit not used as sign bit
+	      Field 4: scaling factor (subject to decoding routine)
+	      Field 5: Lower bound
+	      Field 6: Upper bound
+	      Field 7: Comment field
+
+
+============================================================================
+                                SECTION 2
+============================================================================
+Interpretting the Output.  These examples are all set up to average 
+certain values and keep track of minimums and maximums of certain other 
+values.  An example output summary is shown below:
+
+      Mean Soln: 3.238690e-04    Sigma: 1.773873e-03
+      Lowest:  0.000000e+00
+
+      Mean Extra (EXPTS): 0.000324    Sigma: 0.001774
+      Lowest Extra:  0.000000
+
+      Mean Trials: 56088.750000    Sigma: 17136.394531
+      Highest: 93360   Lowest: 28464
+
+       *** THERE WERE 24 SUCCESSES.
+
+
+Mean Soln indicates the average over the number of Experiments of
+the best solution found with the Sigma being the standard deviation 
+of said solutions and Lowest being the lowest solution found over all
+experiments.
+
+Mean Extra varies according to the algorthm but often records the 
+same information as the Mean Soln group.  Exceptions are noted in the
+examples below.
+
+Mean Trials indicates the average number of recombinations necessary
+to locate the optimal solution specified in CutOff over the number of
+Experiments run with Sigma being the standard deviation of those trials.
+Highest and Lowest are the most number of trials and least number of 
+trials in which the optimal solution was located for those experiments
+that were successful in locating the optimal solution.
+
+SUCCESSES indicates the number of Experiments in which the optimal solution
+was located.
+
+============================================================================
+                                SECTION 3
+============================================================================
+The following model examples are contained in this subdirectory all using
+the TestSuite evaluation functions.  Additionally, the overload of parameters
+in the .config file are explained for each GA model, as well as, any
+unusual values/overloaded indicators that are returned at the bottom
+of the output files.
+
+ ./CHC -  This example uses the CHC adaptive search algorithm as defined
+	  by Eshelman (FOGA-1, pp. 265-283).  This example also uses the
+	  HUX crossover operator and cataclysmic mutation.  There is an
+          example problem in the C9 directory (F6 in Schaffer, et.  al., 
+          ICGA-3 1989) which is F9 in the m_evals package.  This example
+          illustrates the F9 function scaled up using the full matrix 
+          pairing scheme and 10 parameters.
+
+          There is also example code for doing noisy evaluation in the
+	  NOISY subdirectory where the optimal solution is considered
+	  anything with 2.5 std dev below the true optimum of the problem.
+	  An example problem (F8) is also provided with the code.
+		 
+	  Critical config values:
+		Bias = 1.0
+		WNumPop = 1
+
+          Recommended config values:
+		PoolSize = 50 
+		MutateRate = 0.35 (this value only applies 
+				   to cataclysmic mutation)
+
+	  Interpreting the Output:
+		 The P0: through PX: outputs are the values of the 
+		 final parameters of the experiment.
+
+		 Mean Soln and Mean Extra both indicate the average best
+		 solution of the # Experiments.
+
+		 This is not true however for the NOISY example, as the
+		 Mean Soln indicates the mean noisy solution which the
+		 GA sees and Mean EXTRA indicates the average of the best 
+		 TRUE fitness of the solutions.
+
+
+Lots of other models deleted from here down.

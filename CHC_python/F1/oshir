@@ -1,0 +1,42 @@
+Test function selected: f1
+Encoding Selected: BCD
+Standard function selected. No Complexity Option.
+Number of parameters: 3
+P:0 Length: 10
+P:1 Length: 10
+P:2 Length: 10
+
+
+PoolSize            50
+LengthString        30
+Trials              200000
+GenerationCurrent   0
+RandomSeed          123987654
+Bias                1.000000
+MutateRate          0.350000
+OutfileDump         dump
+StatusInterval      100
+NodeFile            f1
+Experiments         1
+CutOff              0.000001
+NumPop              1
+SwapInterval        1000000
+SwapNumber          0
+
+Trial   Bst           Wst           Median        Avg
+    0  4.821900e+00   5.310780e+01   2.569380e+01   2.779337e+01
+ 1528  0.000000e+00   6.000000e-04   2.000000e-04   2.960000e-04
+P0: 0.000000    P1: 0.000000    P2: 0.000000    
+
+Mean Soln: 0.000000e+00   All Solved
+Mean Extra (EXPTS): 0.000000    Sigma: nan
+Lowest Extra:  0.000000
+
+Mean Trials: 1528.000000    Sigma: nan
+Highest: 1528   Lowest: 1528
+
+ *** THERE WERE 1 SUCCESSES.
+
+Command exited with non-zero status 32
+0.00user 0.00system 0:00.00elapsed 20%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+0outputs (0major+331minor)pagefaults 0swaps

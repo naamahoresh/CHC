@@ -1,0 +1,4 @@
+#!/usr/local/bin/tcsh
+rm -f running_on_*
+touch -f running_on_`hostname`
+/bin/time nice ../../XCHC -c f1.config >& $argv[1] 
