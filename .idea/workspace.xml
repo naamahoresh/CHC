@@ -1,109 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3b2cb28-57db-41db-8292-6f274d8e9e78" name="Default" comment="" />
+    <list default="true" id="f3b2cb28-57db-41db-8292-6f274d8e9e78" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CHC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CHC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHC_python/CHC.py" beforeDir="false" afterPath="$PROJECT_DIR$/CHC_python/CHC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHC_python/F1/f1.pool" beforeDir="false" afterPath="$PROJECT_DIR$/CHC_python/F1/f1.pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHC_python/F1/final_result" beforeDir="false" afterPath="$PROJECT_DIR$/CHC_python/F1/final_result" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHC_python/F1/result" beforeDir="false" afterPath="$PROJECT_DIR$/CHC_python/F1/result" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHC_python/Gene.py" beforeDir="false" afterPath="$PROJECT_DIR$/CHC_python/Gene.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHC_python/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/CHC_python/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHC_python/Pool.py" beforeDir="false" afterPath="$PROJECT_DIR$/CHC_python/Pool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHC_python/Status.py" beforeDir="false" afterPath="$PROJECT_DIR$/CHC_python/Status.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHC_python/binary_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/CHC_python/binary_function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHC_python/logger.log" beforeDir="false" afterPath="$PROJECT_DIR$/CHC_python/logger.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHC_python/plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/CHC_python/plot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHC_python/read_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/CHC_python/read_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHC_python/selecation_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/CHC_python/selecation_functions.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CHC_CSUga/Ga/Src/ga_selection.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="586">
-              <caret line="51" column="9" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CHC_CSUga/Ga/Src/ga_copy.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/main.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="113" column="5" selection-start-line="113" selection-start-column="5" selection-end-line="113" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CHC_CSUga/Ga/Src/ga_params.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="228" selection-start-line="228" selection-end-line="228" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/Src/op_hux.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/Evals/m_evals.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10470">
-              <caret line="698" column="25" selection-start-line="698" selection-start-column="25" selection-end-line="698" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CHC_CSUga/Ga/Src/ga_pool.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2700">
-              <caret line="180" column="13" selection-start-line="180" selection-start-column="13" selection-end-line="180" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/Src/binarys.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="72" column="24" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CHC_python/CHC.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="44" column="13" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/Src/op_cataclysm.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -112,104 +34,13 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>logger</find>
-      <find>save_pool</find>
-      <find>bias_fun</find>
-      <find>binary_function</find>
-      <find>FFF3DD</find>
-      <find>MutateRate</find>
-      <find>threshold</find>
-      <find>muta</find>
-      <find>optimum_threshold</find>
-      <find>selection_bias</find>
-      <find>mut</find>
-      <find>mutation</find>
-      <find>selecation_functions</find>
-      <find>mstr_eval</find>
-      <find>index</find>
-      <find>init_pool</find>
-      <find>get_gene</find>
-      <find>StringLength</find>
-      <find>seed_pool</find>
-      <find>m</find>
-      <find>restar</find>
-      <find>cataclysm</find>
-      <find>hux</find>
-      <find>get_parents</find>
-      <find>dif_ary</find>
-      <find>fracrand</find>
-      <find>random0_1</find>
-      <find>linear</find>
-      <find>gene_copy</find>
-      <find>SelectionBias</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>string</replace>
-    </replaceStrings>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/CHC_python/main.py" />
-        <option value="$PROJECT_DIR$/CHC_python/gene.py" />
-        <option value="$PROJECT_DIR$/CHC_python/pool.py" />
-        <option value="$PROJECT_DIR$/CHC_python/p_list.py" />
-        <option value="$PROJECT_DIR$/CHC_python/EVAL.PY.py" />
-        <option value="$PROJECT_DIR$/CHC_python/Evals.py" />
-        <option value="$PROJECT_DIR$/CHC_CSUga/CHC/read_config.py" />
-        <option value="$PROJECT_DIR$/CHC_python/GA.py" />
-        <option value="$PROJECT_DIR$/CHC_python/binary_function.py" />
-        <option value="$PROJECT_DIR$/CHC_python/read_config.py" />
-        <option value="$PROJECT_DIR$/CHC_python/selecation_functions.py" />
-        <option value="$PROJECT_DIR$/CHC_python/Pool.py" />
-        <option value="$PROJECT_DIR$/CHC_python/CHC.py" />
-        <option value="$PROJECT_DIR$/CHC_python/Status.py" />
-        <option value="$PROJECT_DIR$/CHC_python/Gene.py" />
-        <option value="$PROJECT_DIR$/CHC_python/plot.py" />
-        <option value="$PROJECT_DIR$/CHC_python/Main.py" />
-        <option value="$PROJECT_DIR$/CHC_CSUga/CHC/main.c" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="31" />
-    <option name="width" value="1366" />
-    <option name="height" value="705" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="CHC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CHC" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CHC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CHC" type="462c0819:PsiDirectoryNode" />
-              <item name="CHC_CSUga" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CHC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CHC" type="462c0819:PsiDirectoryNode" />
-              <item name="CHC_CSUga" type="462c0819:PsiDirectoryNode" />
-              <item name="CHC" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
+  <component name="ProjectId" id="1ggDP4S0qoZCtRfdqKwg5P4tJrx" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -235,14 +66,12 @@
       <module name="CHC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CHC_python" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CHC_python/Main.py" />
       <option name="PARAMETERS" value="50 30 1 200000 1.0" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -264,6 +93,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CHC_python/Gene.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -285,6 +115,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CHC_python/plot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -306,6 +137,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CHC_python/Pool.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -327,6 +159,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CHC_python/read_config.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -363,6 +196,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551002005761</updated>
+      <workItem from="1598527316172" duration="6681000" />
     </task>
     <servers />
   </component>
@@ -375,47 +209,37 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="67" y="25" width="2493" height="1415" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20404859" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32953683" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32919255" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39906833" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32919255" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32919255" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32919255" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Data View" order="3" />
-    </layout>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/CHC_python/Pool.py</url>
-          <line>196</line>
+          <line>246</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/CHC_python/Status.py</url>
-          <line>85</line>
-          <option name="timeStamp" value="71" />
+          <url>file://$PROJECT_DIR$/CHC_python/Main.py</url>
+          <line>73</line>
+          <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/CHC_python/Main.py</url>
-          <line>76</line>
-          <option name="timeStamp" value="73" />
+          <line>27</line>
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -427,255 +251,7 @@
       </default-breakpoints>
     </breakpoint-manager>
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/Evals/gasdev.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/Evals/sleep.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/read_config.py" />
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.5/logging/__init__.py" />
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.5/codecs.py" />
-    <entry file="file://$PROJECT_DIR$/CHC_python/GA.py" />
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/Src/stats.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_python/p_list.py" />
-    <entry file="file://$PROJECT_DIR$/CHC_python/Evals.py" />
-    <entry file="file://$PROJECT_DIR$/CHC_python/Gene.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.local/lib/python3.6/site-packages/matplotlib/artist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14055">
-          <caret line="951" selection-start-line="951" selection-end-line="951" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_python/Status.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_python/binary_function.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_python/read_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="70" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_python/plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3.6/_bootlocale.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/Evals/dejong_params.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/Evals/m_evals.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/Evals/ran2.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/Evals/ch.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="817" column="46" selection-start-line="817" selection-start-column="40" selection-end-line="817" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/Evals/cclock.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/Evals/cpi.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/Include/op_hux_params.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_python/selecation_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_python/Pool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/Include/binarys_params.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/Include/op_hux.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/Include/op_cataclysm.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="21" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/Evals/m_evals.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10470">
-          <caret line="698" column="25" selection-start-line="698" selection-start-column="25" selection-end-line="698" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/Ga/Src/ga_pool.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2700">
-          <caret line="180" column="13" selection-start-line="180" selection-start-column="13" selection-end-line="180" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/Src/binarys.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="72" column="24" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_python/CHC.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_python/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="102" column="24" selection-start-line="102" selection-start-column="24" selection-end-line="102" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/Ga/Src/ga_copy.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/Ga/Src/ga_random.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="94" column="22" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/Ga/Src/ga_selection.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="51" column="9" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/Ga/Src/ga_params.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="228" selection-start-line="228" selection-end-line="228" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/Src/op_hux.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/Src/op_cataclysm.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CHC_CSUga/CHC/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="113" column="5" selection-start-line="113" selection-start-column="5" selection-end-line="113" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CHC$Main.coverage" NAME="Main Coverage Results" MODIFIED="1598532659912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CHC_python" />
   </component>
 </project>
